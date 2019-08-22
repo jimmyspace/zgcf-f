@@ -1,0 +1,87 @@
+.post-box{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .post-non{
+    position: relative;
+    width: 60%;
+    margin: 100px auto 0;
+    max-width: 375px;
+    text-align: center;
+    image{
+      width: 40%;
+    }
+  }
+  .post-list{
+    position: relative;
+    background: #eee;
+    margin: 10px 0 60px 0;
+    overflow: hidden;
+    .post-item{
+      position: relative;
+      width: 100%;
+      padding: 0 5%;
+      overflow: hidden;
+      background: #fff;
+      margin-bottom: 2px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .item-top{
+        margin: 10px 0 0 0;
+        width: 100%;
+        height: 42px;
+        overflow: hidden;
+        .item-img{
+          float: left;
+          width: 32px;
+          height: 32px;
+          overflow: hidden;
+          border-radius: 50%;
+          image{
+            width: 100%;
+          }
+        }
+        .item-name-time{
+          float: left;
+          height: 42px;
+          padding-left: 10px;
+          .item-name{
+            color: #333;
+            font-size: 13px;
+            line-height: 22px;
+          }
+          .item-time{
+            color: #939393;
+            font-size: 10px;
+          }
+        }
+      }
+      .item-content{
+        padding: 4px 0;
+        overflow: hidden;
+      }
+      .item-bottom{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        .bottom-tip{
+          float: left;
+          margin-right: 10px;
+          min-width: 50px;
+          color: #999;
+          font-size: 14px;
+          line-height: 50px;
+          text-align: center;
+          image{
+            display: inline-block;
+            margin-right: 2px;
+            margin-top: 15px;
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+}

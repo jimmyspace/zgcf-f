@@ -1,0 +1,4 @@
+<view class="container">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="这一刻的想法" />
+  <button class="submit">发表</button>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/components/posts/index.wxml-->
+<view class="post-box">
+  <view class="post-non" wx:if="{{posts_data.length === 0}}">
+    <image mode="widthFix" src="/public/images/non-existent.png"></image>
+  </view>
+  <view class="post-list" wx:if="{{posts_data.length > 0}}">
+    <view class="post-item" wx:for="{{posts_data}}">
+      <view class="item-top">
+        <view class="item-img">
+          <image mode="widthFix" src="{{item.user_img}}"></image>
+        </view>
+        <view class="item-name-time">
+          <view class="item-name">{{item.user_name}}</view>
+          <view class="item-time">{{item.create_time}}</view>
+        </view>
+      </view>
+      <view class="item-content">{{item.content}}</view>
+      <view class="item-bottom">
+        <view class="bottom-tip">
+          <image mode="widthFix" src="/public/images/pinglun.png"></image>
+          {{0}}
+        </view>
+        <view class="bottom-tip">
+          <image mode="widthFix" src="/public/images/dianzan1.png"></image>
+           {{0}}
+        </view>
+        <view class="bottom-tip">
+          <image mode="widthFix" src="/public/images/shoucang1.png"></image>
+           {{0}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

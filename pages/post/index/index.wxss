@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  padding: 10px 5%;
+  overflow: hidden;
+}
+.container textarea {
+  margin: 10px 0 20px;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #666;
+  overflow: hidden;
+}

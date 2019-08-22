@@ -1,0 +1,6 @@
+<!--pages/components/nav_bar/index.wxml-->
+<view class="nav-bar">
+  <view class="nav-item {{bar_type == 1 ? 'active' : ''}}" data-path="/pages/index/index" bindtap="nav_path">首页</view>
+  <view class="nav-item {{bar_type == 2 ? 'active' : ''}}" data-path="/pages/post/index/index" bindtap="nav_path">发布</view>
+  <view class="nav-item {{bar_type == 3 ? 'active' : ''}}" data-path="/pages/index/index" bindtap="nav_path">我的</view>
+</view>
