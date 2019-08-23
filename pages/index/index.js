@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
+const API = require('../../utils/api.js');
 
 Page({
   data: {
@@ -47,16 +48,19 @@ Page({
         }
       })
     }
-    setTimeout(()=>{
-      console.log(this.data.userInfo)
-    },3000)
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  get_post_list: function(){
+    API.post().then(()=>{
+
+    }).catch(()=>{
+
     })
   }
 })

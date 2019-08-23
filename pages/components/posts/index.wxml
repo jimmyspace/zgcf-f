@@ -4,7 +4,7 @@
     <image mode="widthFix" src="/public/images/non-existent.png"></image>
   </view>
   <view class="post-list" wx:if="{{posts_data.length > 0}}">
-    <view class="post-item" wx:for="{{posts_data}}">
+    <view class="post-item" wx:for="{{posts_data}}" wx:key="{{index}}">
       <view class="item-top">
         <view class="item-img">
           <image mode="widthFix" src="{{item.user_img}}"></image>
