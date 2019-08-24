@@ -1,4 +1,4 @@
-// pages/post/index/index.js
+const API = require('../../../utils/api.js')
 Page({
 
   /**
@@ -62,5 +62,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  uploadFile: function(){
+    API.uploadFile()
   }
 })

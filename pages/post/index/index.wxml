@@ -1,4 +1,7 @@
 <view class="container">
   <textarea bindblur="bindTextAreaBlur" auto-height placeholder="这一刻的想法" />
+  <view class="post-imgs">
+    <button bindtap="uploadFile">上传图片</button>
+  </view>
   <button class="submit">发表</button>
 </view>

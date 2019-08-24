@@ -22,6 +22,9 @@ Page({
     }]
   },
   onLoad: function () {
+    wx.redirectTo({
+      url: '/pages/post/index/index'
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
